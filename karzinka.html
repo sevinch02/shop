@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karzinka</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"   integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02"
+                aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " href="index.html">Bosh sahifa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="favorites.html">Tanlanganlar <span class="sum"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"> Korzina <span
+                                class="card-total"></span> </a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input id="searchInput" class="form-control me-2" type="search" placeholder="Search"
+                        aria-label="Search">
+                    <button id="searchBtn" class="btn btn-outline-light" type="button">Qidirish</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <br>
+
+
+    <div class="cart-content">
+        <div class="container">
+    
+            <div class="card">
+                <div class="row">
+                    <div class="col-md-8 cart">
+                        <div class="title">
+                            <div class="row">
+                                <div class="col">
+                                    <h4><b>Shopping Cart</b></h4>
+                                </div>
+                                <!-- <div class="col align-self-center text-right text-muted">    items</div> -->
+                            </div>
+                        </div>
+                        <div id="cartProducts">
+                            <!-- <div class="cart-product">
+                                <img class="img-fluid" src="https://i.imgur.com/1GrakTl.jpg">
+                                <div class="name">
+                                    <div class="row text-muted">Shirt</div>
+                                    <div class="row">Cotton T-shirt</div>
+                                </div>
+                                <div class="count"> <button href="#">-</button><a href="#" class="border">1</a><button href="#">+</button> </div>
+                                <div class="price">&euro; 44.00 <span class="close">&#10005;</span></div>
+                            </div> -->
+                        </div>
+                        <div class="back-to-shop"><a href="index.html">&leftarrow;</a><span class="text-muted">Back to shop</span></div>
+                    </div>
+                    <div class="col-md-4 summary">
+                        <div>
+                            <h5><b>Summary</b></h5>
+                        </div>
+                        <hr>
+                        <div class="row" style="padding: 2vh 0;">
+                            <div class="col">TOT    AL PRICE</div>
+                            <div class="col text-right"  id="total">&euro;</div>
+                        </div> 
+                        <button class="btn">CHECKOUT</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
